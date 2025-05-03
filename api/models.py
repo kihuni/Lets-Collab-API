@@ -14,6 +14,9 @@ class Task(models.Model):
 
 class AuditLog(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
-    action = models.CharField(max_length=50)
-    resource = models.CharField(max_length=50)
+    action = models.CharField(max_length=100)
+    resource = models.CharField(max_length=100)
     timestamp = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f"{self.user.username} - {self.action} on {self.resource} at {self.timestamp}"
