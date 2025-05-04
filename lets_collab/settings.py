@@ -69,7 +69,7 @@ REST_FRAMEWORK = {
 CORS_ALLOWED_ORIGINS = [
     "lets-collab-api.onrender.com"
     "http://localhost:5173",  # Frontend URL
-    "https://letscollab-eight.vercel.app/",  # Deployed frontend URL
+    "https://letscollab-eight.vercel.app",  # Deployed frontend URL
 ]
 
 CORS_ALLOW_METHODS = [
