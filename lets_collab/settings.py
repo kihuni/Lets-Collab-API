@@ -29,7 +29,11 @@ PERMIT_API_KEY = os.environ.get('PERMIT_API_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'lets-collab-api.onrender.com',  # Render backend URL
+    'localhost',  # For local development
+    '127.0.0.1',  # For local development
+]
 
 
 # Application definition
