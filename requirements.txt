@@ -11,5 +11,5 @@ requests==2.32.3
 anyio==4.9.0
 httpx==0.28.1
 gunicorn==23.0.0
-
+psycopg
 dj-database-url==2.2.0
