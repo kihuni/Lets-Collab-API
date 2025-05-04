@@ -29,11 +29,11 @@ class PermitPermission(permissions.BasePermission):
         resource = view.basename if hasattr(view, 'basename') else 'unknown'
         # Map plural basenames to singular resource names expected by Permit.io
         resource_map = {
-            'projects': 'project',
-            'tasks': 'task',
-            'audit_logs': 'audit_log'
+            'projects': 'projects',
+            'tasks': 'tasks',
+            'audit_logs': 'audit_logs'
         }
-        resource = resource_map.get(resource, resource)  # Use mapped name if available
+        resource = resource_map.get(resource, resource)  
 
         action = {
             'GET': 'read',
