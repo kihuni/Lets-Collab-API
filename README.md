@@ -1,6 +1,6 @@
 # Lets-Collab Backend
 
-Backend for the **Lets-Collab** project, a collaborative platform built for the 2025 DEV Challenge hackathon. This Django-based backend provides a REST API for user authentication, project/task management, and access control with audit logging, integrated with Permit.io for permissions (mocked in this implementation).
+Backend for the **Lets-Collab** project, a collaborative platform built for the Permit.io 2025 DEV Challenge hackathon. This Django-based backend provides a REST API for user authentication, project/task management, and access control with audit logging, integrated with Permit.io for permissions (mocked in this implementation).
 
 ## Tech Stack
 - **Django**: Web framework for building the API.
